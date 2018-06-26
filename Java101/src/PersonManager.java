@@ -6,13 +6,13 @@ public class PersonManager {
 	public PersonManager(Person Person1, Person Person2, Person Person3) {
 		// creating the constructor with the parameters
 
-		//people = new ArrayList<>();
+		people = new ArrayList<>();
 		people.add(Person1);
 		people.add(Person2);
 		people.add(Person3);
 	}
 
-	public void print(ArrayList people) {
+	public void print() {
 		for (Object p : people) {
 			System.out.println(p);
 

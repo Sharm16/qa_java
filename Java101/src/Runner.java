@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Runner {
 
 	public static void main(String[] args) {
@@ -12,6 +10,6 @@ public class Runner {
 		
 		
 		//System.out.println(pm.search("sharm"));
-		
+		pm.print();
 	}
 }
