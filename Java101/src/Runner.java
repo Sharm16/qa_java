@@ -9,7 +9,7 @@ public class Runner {
 		// creating a variable of type PersonManager called pm, with parameters from the constructor
 		
 		
-		//System.out.println(pm.search("sharm"));
+		System.out.println(pm.search("sharm"));
 		pm.print();
 	}
 }
