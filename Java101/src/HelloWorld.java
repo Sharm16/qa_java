@@ -43,7 +43,14 @@ public class HelloWorld {
 	}
 
 	public static int BlackJack(int a, int b) {
-		if (a > 21 && b > 21)
+		
+		if (a < 0 && b <0 )
+			return 0;
+		if (a < 0 && b >0 )
+			return b;
+		if (a < 0 && a >0 )
+			return a;
+		else if (a > 21 && b > 21)
 			return 0;
 		else if (a > 21)
 			return b;
@@ -53,8 +60,8 @@ public class HelloWorld {
 			return a;
 		else if (b > a)
 			return b;
-		else
-			return 1;
+		return 0;
+		
 
 	}
 

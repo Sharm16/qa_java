@@ -4,7 +4,9 @@ import java.lang.reflect.Array;
 
 public class PaintWizard {
 
-	Array[] paintArray;
+	
+	public PaintWizard(){
+	Paint paintArray[] = new Paint[2];
 	
 	Paint paint1 = new Paint("CheapoMax", 20, 19.99, 10.2);
 	Paint paint2 = new Paint("AverageJoes", 15, 17.99, 11.1);
@@ -14,17 +16,15 @@ public class PaintWizard {
 	paintArray[0]=paint1;
 	paintArray[1]=paint2;
 	paintArray[2]=paint3;
+	}
 
-	
 
-
-	public String arrayPrint(Array[] paintArray) {
+	public void arrayPrint(Array[] paintArray) {
 		for (int i =0;i<paintArray.length;i++) {
-			return paintArray[i].toString();
-		}
-		return null;
 		
+		System.out.println(paintArray[i].toString());
+	}
 
 }
 	
-}}
+}
